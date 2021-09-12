@@ -12,8 +12,11 @@ function updateClock() {
     digitalElement.innerHTML = `${fixZero(hour)}: ${fixZero(minute)}:${fixZero(second)}`;
 
     let sDeg = ((360/60) * second) - 90;
+    let mDeg = ((360 /60) * minute) -90;
 
     sElement.style.transform = `rotate(${sDeg}deg)`;
+    mElement.style.transform = `rotate(${mDeg}deg)`;
+
 
 
 }
